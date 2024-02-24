@@ -1,0 +1,23 @@
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        string password;
+
+        Console.WriteLine("Ingrese la contrasena:");
+
+        do
+        {
+            password = Console.ReadLine();
+
+            if (password != "jutiapa")
+            {
+                Console.WriteLine("Contrasena incorrecta. Intente nuevamente:");
+            }
+        } while (password != "jutiapa");
+
+        Console.WriteLine("Contrasena correcta!");
+    }
+    }

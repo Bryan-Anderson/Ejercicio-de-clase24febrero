@@ -1,0 +1,20 @@
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        int num = 1;
+
+        while (true)
+        {
+            if (num % 7 == 0 && num % 11 == 0)
+            {
+               Console.WriteLine("El primer numero entero posit divisible entre 7 y 11 es: " + num);
+  break;
+            }
+
+            num++;
+        }
+    }
+    }

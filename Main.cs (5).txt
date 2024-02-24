@@ -1,0 +1,30 @@
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        Random random = new Random();
+        int numeroAleatorio = random.Next(1, 101);
+        int adivinanza;
+
+        Console.WriteLine("Adivina el número entre 1 y 100:");
+
+        do
+        {
+            adivinanza = Convert.ToInt32(Console.ReadLine());
+
+            if (adivinanza < numeroAleatorio)
+            {
+                Console.WriteLine("Intenta con un número más grande:");
+            }
+            else if (adivinanza > numeroAleatorio)
+            {
+                Console.WriteLine("Intenta con un número más pequeño:");
+            }
+
+        } while (adivinanza != numeroAleatorio);
+
+        Console.WriteLine("¡Felicidades! Adivinaste el número.");
+    }
+    }

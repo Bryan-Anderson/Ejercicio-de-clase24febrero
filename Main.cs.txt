@@ -1,0 +1,17 @@
+using System;
+
+class Program
+{
+    static void Main()
+    {
+        int count = 0;
+        int num = 0;
+
+        while (count < 5)
+        {
+            num += 2;
+            Console.WriteLine(num);
+            count++;
+        }
+    }
+    }
